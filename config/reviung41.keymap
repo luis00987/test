@@ -41,7 +41,7 @@
         ipadBT: ipadBT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 2>;
+            bindings = <&bt BT_SEL 1 &to 1>;
             label = "IPADBT";
         };
 
@@ -61,16 +61,7 @@
 &lt 8 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T               &kp Y  &kp U        &kp I      &kp O    &kp P     &kp BACKSPACE
 &mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F              &kp G               &kp H  &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V              &kp B               &kp N  &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                              &kp LGUI  &mt LALT QUESTION         &lt 3 SPACE         &lt 5 SPACE  &lt 6 RET
-            >;
-        };
-
-        spaceWindows {
-            bindings = <
-&kp ESCAPE      &none      &none      &kp LS(LG(S))  &kp DEL    &none             &kp LGUI   &kp N7  &kp N8   &kp N9  &kp STAR   &kp BSPC
-&mt LSHIFT TAB  &kp LC(A)  &kp LC(X)  &kp LC(C)      &kp LC(V)  &none             &kp MINUS  &kp N4  &kp N5   &kp N6  &kp SLASH  &kp DEL
-&kp LCTRL       &kp LC(Z)  &none      &none          &kp LG(D)  &none             &kp N0     &kp N1  &kp N2   &kp N3  &kp EQUAL  &kp RET
-                                      &kp LGUI       &kp LALT          &kp SPACE             &none   &kp DOT
+                              &kp LGUI  &mt LALT QUESTION         &lt 2 SPACE         &lt 5 SPACE  &lt 6 RET
             >;
         };
 
@@ -83,12 +74,21 @@
             >;
         };
 
+        spaceWindows {
+            bindings = <
+&kp ESCAPE      &none      &none      &kp LS(LG(S))  &kp DEL    &none             &kp LGUI   &kp N7  &kp N8   &kp N9  &kp STAR   &kp BSPC
+&mt LSHIFT TAB  &kp LC(A)  &kp LC(X)  &kp LC(C)      &kp LC(V)  &none             &kp MINUS  &kp N4  &kp N5   &kp N6  &kp SLASH  &kp DEL
+&kp LCTRL       &kp LC(Z)  &none      &none          &kp LG(D)  &none             &kp N0     &kp N1  &kp N2   &kp N3  &kp EQUAL  &kp RET
+                                      &kp LGUI       &kp LALT          &kp SPACE             &none   &kp DOT
+            >;
+        };
+
         windowsShorcuts {
             bindings = <
-&none        &none      &none      &kp LG(LS(S))  &kp DELETE  &none         &none  &none  &none  &none  &none  &none
-&kp LS(TAB)  &kp LC(A)  &kp LC(X)  &kp LC(C)      &kp LC(V)   &none         &none  &none  &none  &none  &none  &none
-&none        &kp LC(Z)  &none      &none          &kp LG(D)   &none         &none  &none  &none  &none  &none  &none
-                                   &none          &none              &none         &none  &none
+&kp ESCAPE        &none      &none      &kp LG(LS(S))  &kp DELETE  &none         &none  &none  &none  &none  &none  &none
+&kp LS(TAB)       &kp LC(A)  &kp LC(X)  &kp LC(C)      &kp LC(V)   &none         &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &kp LC(Z)  &none      &none          &kp LG(D)   &none         &none  &none  &none  &none  &none  &none
+                                        &none          &none              &none         &none  &none
             >;
         };
 
@@ -142,7 +142,7 @@
 &none  &none  &none  &none           &none  &none               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &none  &none  &none  &none           &none  &none               &windowsBT    &ipadBT       &none         &none         &none         &none
 &none  &none  &none  &none           &none  &none               &none         &none         &none         &none         &none         &none
-                     &studio_unlock  &to 2         &bootloader                &to 0         &out OUT_TOG
+                     &studio_unlock  &to 1         &bootloader                &to 0         &out OUT_TOG
             >;
         };
     };
