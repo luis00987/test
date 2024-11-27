@@ -52,19 +52,19 @@
 
         defaultWindows {
             bindings = <
-&lt 7 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T               &kp Y  &kp U        &kp I         &kp O    &kp P     &kp BACKSPACE
+&lt 6 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T               &kp Y  &kp U        &kp I         &kp O    &kp P     &kp BACKSPACE
 &mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F              &kp G               &kp H  &kp J        &kp K         &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V              &kp B               &kp N  &kp M        &kp COMMA     &kp DOT  &kp FSLH  &kp RSHFT
-                              &kp LGUI  &mt LALT QUESTION         &lt 2 SPACE         &lt 4 ENTER  &lt 5 K_MENU
+                              &kp LGUI  &mt LALT QUESTION         &lt 2 SPACE         &lt 3 ENTER  &lt 4 K_MENU
             >;
         };
 
         defaultIpad {
             bindings = <
-&lt 7 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T               &kp Y  &kp U        &kp I         &kp O    &kp P     &kp BACKSPACE
+&lt 6 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T               &kp Y  &kp U        &kp I         &kp O    &kp P     &kp BACKSPACE
 &mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F              &kp G               &kp H  &kp J        &kp K         &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V              &kp B               &kp N  &kp M        &kp COMMA     &kp DOT  &kp FSLH  &kp RSHFT
-                              &kp LGUI  &mt LALT QUESTION         &lt 3 SPACE         &lt 4 ENTER  &lt 5 K_MENU
+                              &kp LGUI  &mt LALT QUESTION         &lt 3 SPACE         &lt 3 ENTER  &lt 4 K_MENU
             >;
         };
 
@@ -77,21 +77,12 @@
             >;
         };
 
-        ipadShorcuts {
+        spaceIpad {
             bindings = <
-&none        &none      &none      &kp LG(LS(NUMBER_4))  &kp DELETE  &none         &none  &none  &none  &none  &none  &none
-&kp LS(TAB)  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)   &none         &none  &none  &none  &none  &none  &none
-&none        &kp LG(Z)  &none      &none                 &kp LG(H)   &none         &none  &none  &none  &none  &none  &none
-                                   &none                 &none              &none         &none  &none
-            >;
-        };
-
-        spaceLayer {
-            bindings = <
-&kp ESCAPE      &none      &none  &kp LC(LG(NUMBER_4))  &none      &none             &kp PLUS   &kp N7  &kp N8   &kp N9  &kp STAR   &kp BSPC
-&mt LSHIFT TAB  &kp LG(A)  &kp LG(X) &kp LG(C)                &kp LG(V)     &none             &kp MINUS  &kp N4  &kp N5   &kp N6  &kp SLASH  &kp DEL
-&kp LCTRL       &kp LG(Z)  &none  &none                 &kp LG(H)  &none             &kp N0     &kp N1  &kp N2   &kp N3  &kp EQUAL  &kp RET
-                                  &kp LGUI              &kp LALT          &kp SPACE             &none   &kp DOT
+&kp ESCAPE      &none      &none      &kp LC(LG(NUMBER_4))  &kp DEL    &none             &kp PLUS   &kp N7     &kp N8      &kp N9  &kp STAR   &kp BSPC
+&mt LSHIFT TAB  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)  &none             &kp MINUS  &kp N4     &kp N5      &kp N6  &kp SLASH  &kp DEL
+&kp LCTRL       &kp LG(Z)  &none      &none                 &kp LG(H)  &none             &kp N0     &kp N1     &kp N2      &kp N3  &kp EQUAL  &kp RET
+                                      &kp LGUI              &kp LALT          &kp SPACE             &kp ENTER  &kp K_MENU
             >;
         };
 
@@ -115,7 +106,7 @@
 
         escLayer {
             bindings = <
-&none           &kp F1  &kp F2   &kp F3    &kp F4    &mo 8         &none  &none  &none  &none  &none  &none
+&none           &kp F1  &kp F2   &kp F3    &kp F4    &mo 7         &none  &none  &none  &none  &none  &none
 &mt LSHIFT TAB  &kp F5  &kp F6   &kp F7    &kp F8    &none         &none  &none  &none  &none  &none  &none
 &kp LCTRL       &kp F9  &kp F10  &kp F11   &kp F12   &none         &none  &none  &none  &none  &none  &none
                                  &kp LGUI  &kp LALT         &none         &none  &none
