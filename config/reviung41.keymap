@@ -41,7 +41,7 @@
         ipadBT: ipadBT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 1>;
+            bindings = <&bt BT_SEL 1 &to 2>;
             label = "IPADBT";
         };
 
@@ -58,19 +58,28 @@
 
         defaultWindows {
             bindings = <
-&lt 7 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T               &kp Y  &kp U        &kp I      &kp O    &kp P     &kp BACKSPACE
+&lt 8 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T               &kp Y  &kp U        &kp I      &kp O    &kp P     &kp BACKSPACE
 &mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F              &kp G               &kp H  &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V              &kp B               &kp N  &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                              &kp LGUI  &mt LALT QUESTION         &lt 2 SPACE         &lt 4 SPACE  &lt 5 RET
+                              &kp LGUI  &mt LALT QUESTION         &lt 3 SPACE         &lt 5 SPACE  &lt 6 RET
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&kp ESCAPE      &none      &none      &none      &kp LS(LG(S))  &none             &kp LGUI   &kp N7  &kp N8   &kp N9  &kp STAR   &kp BSPC
+&mt LSHIFT TAB  &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)      &none             &kp MINUS  &kp N4  &kp N5   &kp N6  &kp SLASH  &kp DEL
+&kp LCTRL       &none      &none      &none      &none          &none             &kp N0     &kp N1  &kp N2   &kp N3  &kp EQUAL  &kp RET
+                                      &kp LGUI   &kp LALT              &kp SPACE             &none   &kp DOT
             >;
         };
 
         defaultIpad {
             bindings = <
-&lt 7 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T               &kp Y  &kp U        &kp I      &kp O    &kp P     &kp BACKSPACE
+&lt 8 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T               &kp Y  &kp U        &kp I      &kp O    &kp P     &kp BACKSPACE
 &mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F              &kp G               &kp H  &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V              &kp B               &kp N  &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                              &kp LGUI  &mt LALT QUESTION         &lt 3 SPACE         &lt 4 SPACE  &lt 5 RET
+                              &kp LGUI  &mt LALT QUESTION         &lt 4 SPACE         &lt 5 SPACE  &lt 6 RET
             >;
         };
 
@@ -121,7 +130,7 @@
 
         escLayer {
             bindings = <
-&none           &kp F1  &kp F2   &kp F3    &kp F4    &mo 8         &none  &none  &none  &none  &none  &none
+&none           &kp F1  &kp F2   &kp F3    &kp F4    &mo 9         &none  &none  &none  &none  &none  &none
 &mt LSHIFT TAB  &kp F5  &kp F6   &kp F7    &kp F8    &none         &none  &none  &none  &none  &none  &none
 &kp LCTRL       &kp F9  &kp F10  &kp F11   &kp F12   &none         &none  &none  &none  &none  &none  &none
                                  &kp LGUI  &kp LALT         &none         &none  &none
@@ -133,7 +142,7 @@
 &none  &none  &none  &none           &none  &none               &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &none  &none  &none  &none           &none  &none               &windowsBT    &ipadBT       &none         &none         &none         &none
 &none  &none  &none  &none           &none  &none               &none         &none         &none         &none         &none         &none
-                     &studio_unlock  &to 1         &bootloader                &to 0         &out OUT_TOG
+                     &studio_unlock  &to 2         &bootloader                &to 0         &out OUT_TOG
             >;
         };
     };
