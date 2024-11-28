@@ -52,55 +52,55 @@
 
         default {
             bindings = <
-&lt 5 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T               &kp Y  &kp U        &kp I         &kp O    &kp P     &kp BACKSPACE
-&mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F              &kp G               &kp H  &kp J        &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z  &kp X  &kp C     &kp V              &kp B               &kp N  &kp M        &kp COMMA     &kp DOT  &kp FSLH  &kp RSHFT
-                              &kp LGUI  &mt LALT QUESTION         &lt 1 SPACE         &lt 3 ENTER  &lt 4 K_MENU
+&lt 5 ESC       &kp Q  &kp W  &kp E     &kp R              &kp T               &kp Y  &kp U        &kp I                 &kp O    &kp P     &kp BACKSPACE
+&mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F              &kp G               &kp H  &kp J        &kp K                 &kp L    &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z  &kp X  &kp C     &kp V              &kp B               &kp N  &kp M        &kp COMMA             &kp DOT  &kp FSLH  &kp RSHFT
+                              &kp LGUI  &mt LALT QUESTION         &lt 1 SPACE         &lt 3 ENTER  &lt 4 K_CONTEXT_MENU
             >;
         };
 
         spaceWindows {
             bindings = <
-&kp ESCAPE      &none      &none      &kp LS(LG(S))  &kp DEL            &none             &kp PLUS   &kp N7     &kp N8      &kp N9  &kp STAR   &kp BSPC
-&mt LSHIFT TAB  &kp LC(A)  &kp LC(X)  &kp LC(C)      &kp LC(V)          &none             &kp MINUS  &kp N4     &kp N5      &kp N6  &kp SLASH  &kp DEL
-&kp LCTRL       &kp LC(Z)  &none      &none          &kp LG(D)          &none             &kp N0     &kp N1     &kp N2      &kp N3  &kp EQUAL  &kp RET
-                                      &kp LGUI       &mt LALT QUESTION         &kp SPACE             &kp ENTER  &kp K_MENU
+&kp ESCAPE      &none      &none      &kp LS(LG(S))  &kp DEL            &none             &kp PLUS   &kp N7     &kp N8              &kp N9  &kp STAR   &kp BSPC
+&mt LSHIFT TAB  &kp LC(A)  &kp LC(X)  &kp LC(C)      &kp LC(V)          &none             &kp MINUS  &kp N4     &kp N5              &kp N6  &kp SLASH  &kp DEL
+&kp LCTRL       &kp LC(Z)  &none      &none          &kp LG(D)          &none             &kp N0     &kp N1     &kp N2              &kp N3  &kp EQUAL  &kp RET
+                                      &kp LGUI       &mt LALT QUESTION         &kp SPACE             &kp ENTER  &kp K_CONTEXT_MENU
             >;
         };
 
         spaceIpad {
             bindings = <
-&kp ESCAPE      &none      &none      &kp LC(LG(NUMBER_4))  &kp DEL            &none             &kp PLUS   &kp N7     &kp N8      &kp N9  &kp STAR   &kp BSPC
-&mt LSHIFT TAB  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)          &none             &kp MINUS  &kp N4     &kp N5      &kp N6  &kp SLASH  &kp DEL
-&kp LCTRL       &kp LG(Z)  &none      &none                 &kp LG(H)          &none             &kp N0     &kp N1     &kp N2      &kp N3  &kp EQUAL  &kp RET
-                                      &kp LGUI              &mt LALT QUESTION         &kp SPACE             &kp ENTER  &kp K_MENU
+&kp ESCAPE      &none      &none      &kp LC(LG(NUMBER_4))  &kp DEL            &none             &kp PLUS   &kp N7     &kp N8              &kp N9  &kp STAR   &kp BSPC
+&mt LSHIFT TAB  &kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)          &none             &kp MINUS  &kp N4     &kp N5              &kp N6  &kp SLASH  &kp DEL
+&kp LCTRL       &kp LG(Z)  &none      &none                 &kp LG(H)          &none             &kp N0     &kp N1     &kp N2              &kp N3  &kp EQUAL  &kp RET
+                                      &kp LGUI              &mt LALT QUESTION         &kp SPACE             &kp ENTER  &kp K_CONTEXT_MENU
             >;
         };
 
         introLayer {
             bindings = <
-&kp ESCAPE      &none  &none  &none     &none              &none             &kp C_VOL_UP  &kp PG_UP   &kp UP      &kp PG_DN   &kp C_MUTE  &kp BSPC
-&mt LSHIFT TAB  &none  &none  &none     &none              &none             &kp HOME      &kp LEFT    &kp DOWN    &kp RIGHT   &kp END     &kp DEL
-&kp LCTRL       &none  &none  &none     &none              &none             &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp RCTRL   &kp RSHIFT
-                              &kp LGUI  &mt LALT QUESTION         &kp SPACE                &kp ENTER   &kp K_MENU
+&kp ESCAPE      &none  &none  &none     &none              &none             &kp C_VOL_UP  &kp PG_UP   &kp UP              &kp PG_DN   &kp C_MUTE  &kp BSPC
+&mt LSHIFT TAB  &none  &none  &none     &none              &none             &kp HOME      &kp LEFT    &kp DOWN            &kp RIGHT   &kp END     &kp DEL
+&kp LCTRL       &none  &none  &none     &none              &none             &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY          &kp C_NEXT  &kp RCTRL   &kp RSHIFT
+                              &kp LGUI  &mt LALT QUESTION         &kp SPACE                &kp ENTER   &kp K_CONTEXT_MENU
             >;
         };
 
         menuLayer {
             bindings = <
-&kp ESC             &kp EXCL   &kp AT    &kp HASH       &kp DLLR           &kp PRCNT             &kp PLUS   &kp GRAVE  &kp LPAR    &kp RPAR  &kp STAR   &kp BSPC
-&mt LEFT_SHIFT TAB  &kp CARET  &kp AMPS  &kp BACKSLASH  &none              &none                 &kp MINUS  &kp TILDE  &kp LBKT    &kp RBKT  &kp SLASH  &kp DEL
-&kp LCTRL           &none      &none     &none          &none              &none                 &kp PIPE   &kp UNDER  &kp LBRC    &kp RBRC  &kp EQUAL  &kp ENTER
-                                         &kp LGUI       &mt LALT QUESTION             &kp SPACE             &kp ENTER  &kp K_MENU
+&kp ESC             &kp EXCL   &kp AT    &kp HASH       &kp DLLR           &kp PRCNT             &kp PLUS   &kp GRAVE  &kp LPAR            &kp RPAR  &kp STAR   &kp BSPC
+&mt LEFT_SHIFT TAB  &kp CARET  &kp AMPS  &kp BACKSLASH  &none              &none                 &kp MINUS  &kp TILDE  &kp LBKT            &kp RBKT  &kp SLASH  &kp DEL
+&kp LCTRL           &none      &none     &none          &none              &none                 &kp PIPE   &kp UNDER  &kp LBRC            &kp RBRC  &kp EQUAL  &kp ENTER
+                                         &kp LGUI       &mt LALT QUESTION             &kp SPACE             &kp ENTER  &kp K_CONTEXT_MENU
             >;
         };
 
         escLayer {
             bindings = <
-&none           &kp F1  &kp F2   &kp F3    &kp F4             &mo 6             &none  &none      &none       &none  &none  &none
-&mt LSHIFT TAB  &kp F5  &kp F6   &kp F7    &kp F8             &none             &none  &none      &none       &none  &none  &none
-&kp LCTRL       &kp F9  &kp F10  &kp F11   &kp F12            &none             &none  &none      &none       &none  &none  &none
-                                 &kp LGUI  &mt LALT QUESTION         &kp SPACE         &kp ENTER  &kp K_MENU
+&none           &kp F1  &kp F2   &kp F3    &kp F4             &mo 6             &none  &none      &none               &none  &none  &none
+&mt LSHIFT TAB  &kp F5  &kp F6   &kp F7    &kp F8             &none             &none  &none      &none               &none  &none  &none
+&kp LCTRL       &kp F9  &kp F10  &kp F11   &kp F12            &none             &none  &none      &none               &none  &none  &none
+                                 &kp LGUI  &mt LALT QUESTION         &kp SPACE         &kp ENTER  &kp K_CONTEXT_MENU
             >;
         };
 
