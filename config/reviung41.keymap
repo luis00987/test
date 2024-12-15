@@ -26,8 +26,8 @@
             layers = <0>;
         };
 
-        delL {
-            bindings = <&kp DELETE>;
+        esc {
+            bindings = <&kp ESCAPE>;
             key-positions = <4 3>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
@@ -61,14 +61,6 @@
         ctrl+BS {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <28 27>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <3 2>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0>;
